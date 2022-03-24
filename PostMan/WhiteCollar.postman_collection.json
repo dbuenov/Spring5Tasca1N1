@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "df97962c-f169-4c99-8244-8a3f31fc464e",
+		"name": "WhiteCollar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Shops",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\":\"Vigo\",\r\n    \"capacitat\":16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Shops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Pictures",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\":\"Yo que sé\",\r\n    \"autor\":\"Marc Bueno\",\r\n    \"preu\":1000000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shops/4/pictures",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops",
+						"4",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pictures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shops/3/pictures",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops",
+						"3",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pictures",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shops/1/pictures",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops",
+						"1",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
